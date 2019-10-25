@@ -15,6 +15,8 @@
 		A56A086823626C5100EE9D99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A56A086723626C5100EE9D99 /* main.m */; };
 		A56A087223626C5200EE9D99 /* LabiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A56A087123626C5200EE9D99 /* LabiOSTests.m */; };
 		A56A087D23626C5200EE9D99 /* LabiOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A56A087C23626C5200EE9D99 /* LabiOSUITests.m */; };
+		A56A089323626FB900EE9D99 /* ShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A56A089223626FB900EE9D99 /* ShadowViewController.m */; };
+		A56A0897236270E000EE9D99 /* Panel.m in Sources */ = {isa = PBXBuildFile; fileRef = A56A0896236270E000EE9D99 /* Panel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		A56A087823626C5200EE9D99 /* LabiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56A087C23626C5200EE9D99 /* LabiOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabiOSUITests.m; sourceTree = "<group>"; };
 		A56A087E23626C5200EE9D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A56A089123626FB900EE9D99 /* ShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowViewController.h; sourceTree = "<group>"; };
+		A56A089223626FB900EE9D99 /* ShadowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowViewController.m; sourceTree = "<group>"; };
+		A56A0895236270E000EE9D99 /* Panel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Panel.h; sourceTree = "<group>"; };
+		A56A0896236270E000EE9D99 /* Panel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Panel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		A56A085723626C4F00EE9D99 /* LabiOS */ = {
 			isa = PBXGroup;
 			children = (
+				A56A0894236270B400EE9D99 /* components */,
+				A56A088D23626E1400EE9D99 /* ViewControllers */,
 				A56A085823626C5000EE9D99 /* AppDelegate.h */,
 				A56A085923626C5000EE9D99 /* AppDelegate.m */,
 				A56A085B23626C5000EE9D99 /* ViewController.h */,
@@ -130,6 +138,24 @@
 				A56A087E23626C5200EE9D99 /* Info.plist */,
 			);
 			path = LabiOSUITests;
+			sourceTree = "<group>";
+		};
+		A56A088D23626E1400EE9D99 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A56A089123626FB900EE9D99 /* ShadowViewController.h */,
+				A56A089223626FB900EE9D99 /* ShadowViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A56A0894236270B400EE9D99 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				A56A0895236270E000EE9D99 /* Panel.h */,
+				A56A0896236270E000EE9D99 /* Panel.m */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56A0897236270E000EE9D99 /* Panel.m in Sources */,
 				A56A085D23626C5000EE9D99 /* ViewController.m in Sources */,
 				A56A086823626C5100EE9D99 /* main.m in Sources */,
+				A56A089323626FB900EE9D99 /* ShadowViewController.m in Sources */,
 				A56A085A23626C5000EE9D99 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
