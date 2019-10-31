@@ -1,0 +1,21 @@
+PODS:
+  - Yoga (1.6.0)
+  - YogaKit (1.6.0):
+    - Yoga (~> 1.6)
+
+DEPENDENCIES:
+  - Yoga (= 1.6.0)
+  - YogaKit (= 1.6.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Yoga
+    - YogaKit
+
+SPEC CHECKSUMS:
+  Yoga: 81670877477311136b1b3f69a6307ce62e1c89cf
+  YogaKit: 8fe0ddd21673226c0b6077fc3ad5c8fa6cda722e
+
+PODFILE CHECKSUM: 58bee626e43f3d89fd5ce94f84bd9a9a6c83edab
+
+COCOAPODS: 1.5.0

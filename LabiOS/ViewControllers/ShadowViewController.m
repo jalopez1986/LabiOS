@@ -7,6 +7,7 @@
 //
 
 #import "ShadowViewController.h"
+#import <YogaKit/UIView+Yoga.h>
 
 @interface ShadowViewController ()
 
@@ -16,7 +17,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self createPanel];
+    //[self createPanel];
+    
+    UIView *contentView = [UIView new];
+    [contentView setBackgroundColor:[UIColor redColor]];
+    
+    [contentView configureLayoutWithBlock:^(YGLayout * layout) {
+        layout.isEnabled = YES;
+        layout.flexDirection = YGFlexDirectionRow;
+        layout.width = YGPointValue(320);
+        layout.height = YGPointValue(80);
+        layout.alignItems = YGAlignCenter;
+        layout.justifyContent = YGJustifySpaceAround;
+    }];
+    
+    UIView *child1 = [UIView new];
+    child1.backgroundColor = [UIColor blueColor];
+    [child1 configureLayoutWithBlock:^void(YGLayout *layout) {
+        layout.isEnabled = YES;
+        layout.width = YGPointValue(50);
+        layout.height = YGPointValue(50);
+    }];
+    
+    UIView *child2 = [UIView new];
+    child2.backgroundColor = [UIColor blueColor];
+    [child2 configureLayoutWithBlock:^void(YGLayout *layout) {
+        layout.isEnabled = YES;
+        layout.width = YGPointValue(50);
+        layout.height = YGPointValue(50);
+    }];
+    
+    UIView *child3 = [UIView new];
+    child3.backgroundColor = [UIColor blueColor];
+    [child3 configureLayoutWithBlock:^void(YGLayout *layout) {
+        layout.isEnabled = YES;
+        layout.width = YGPointValue(50);
+        layout.height = YGPointValue(50);
+    }];
+    
+    [contentView addSubview:child1];
+    [contentView addSubview:child2];
+    [contentView addSubview:child3];
+    [contentView.yoga applyLayoutPreservingOrigin:NO];
+    [self.view addSubview:contentView];
     
     
 
