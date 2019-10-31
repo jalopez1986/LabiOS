@@ -18,6 +18,7 @@
     [super viewDidLoad];
     [self createPanel];
     
+    
 
     // Do any additional setup after loading the view.
 }
@@ -29,9 +30,21 @@
     //[panel1 setBackgroundColor:[UIColor greenColor]];
     panel1.clipsToBounds = YES;
     
+    [self addShadow:panel1.layer];
+    
     [self.view addSubview:panel1];
     
+    
 }
+
+- (void) addShadow:(CALayer*) layer {
+    layer.shadowColor = [UIColor.blueColor CGColor];
+    layer.shadowOpacity = 1;
+    layer.shadowOffset = CGSizeMake(0.0, 0.0);
+    layer.shadowRadius = 10;
+    layer.masksToBounds = NO;
+}
+    
 
 
 /*
