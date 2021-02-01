@@ -16,14 +16,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    [self StringsSection];
+    
+    
+}
+
+-(void)consAndVariablesSection {
+    NSString *word1 = @"Hello";
+    word1 = @"change de value";
+    
+    NSString * const word2 = @"Goodbye";
+    //word2 = @"change de value"; no se puede porque es constante
+    // esa sintaxis solo aplica cuando es String
+    
+    //para el resto de tipos
+    int intVariable = 10;
+    intVariable = 20;  //lo permite
+    
+    const int intConstante = 50;
+    //intConstante = 60; no se puede es constante
+    
+    
+    
+}
+
+
+-(void)StringsSection {
     name = @"Jorge";
     NSString *word = @"Hola";
     
     self.label.text = name;
     self.label.text = [NSString stringWithFormat:@"%@ %@", word,name];
 }
+
 
 /*
 #pragma mark - Navigation
