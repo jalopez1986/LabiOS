@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50E998E25C8C80F008FA340 /* BasicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50E998D25C8C80F008FA340 /* BasicsViewController.m */; };
 		A56A085A23626C5000EE9D99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A56A085923626C5000EE9D99 /* AppDelegate.m */; };
 		A56A085D23626C5000EE9D99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A56A085C23626C5000EE9D99 /* ViewController.m */; };
 		A56A086023626C5000EE9D99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56A085E23626C5000EE9D99 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A50E998C25C8C80F008FA340 /* BasicsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicsViewController.h; sourceTree = "<group>"; };
+		A50E998D25C8C80F008FA340 /* BasicsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicsViewController.m; sourceTree = "<group>"; };
 		A56A085523626C4F00EE9D99 /* LabiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56A085823626C5000EE9D99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A56A085923626C5000EE9D99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A50E998B25C8C7AE008FA340 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				A50E998C25C8C80F008FA340 /* BasicsViewController.h */,
+				A50E998D25C8C80F008FA340 /* BasicsViewController.m */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
 		A56A084C23626C4F00EE9D99 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +119,7 @@
 		A56A085723626C4F00EE9D99 /* LabiOS */ = {
 			isa = PBXGroup;
 			children = (
+				A50E998B25C8C7AE008FA340 /* Basics */,
 				A56A0894236270B400EE9D99 /* components */,
 				A56A088D23626E1400EE9D99 /* ViewControllers */,
 				A56A085823626C5000EE9D99 /* AppDelegate.h */,
@@ -291,6 +304,7 @@
 				A56A0897236270E000EE9D99 /* Panel.m in Sources */,
 				A56A085D23626C5000EE9D99 /* ViewController.m in Sources */,
 				A56A086823626C5100EE9D99 /* main.m in Sources */,
+				A50E998E25C8C80F008FA340 /* BasicsViewController.m in Sources */,
 				A56A089323626FB900EE9D99 /* ShadowViewController.m in Sources */,
 				A56A085A23626C5000EE9D99 /* AppDelegate.m in Sources */,
 			);
