@@ -20,8 +20,7 @@
     [self StringsSection];
     [self intSection];
     [self doubleSection];
-    
-    
+    [self booleanSection];
 }
 
 -(void)consAndVariablesSection {
@@ -67,6 +66,18 @@
     
     //.2 indica el numero de decimales que quiero. En este caso 2
     self.label.text = [NSString stringWithFormat:@"%.2f", score];
+    
+}
+
+-(void)booleanSection {
+    BOOL isButtonEnabled = NO;
+    BOOL isSwitchOn = true;
+    
+    self.myButton.enabled = isButtonEnabled;
+    self.mySwitch.on = isSwitchOn;
+    
+    //En objective C se recomienda usar YES NO
+    //en c es true/false
     
 }
 

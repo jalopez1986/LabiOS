@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
+@property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
 
 @end
 
