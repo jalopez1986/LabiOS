@@ -31,7 +31,7 @@
                                 <rect key="frame" x="20" y="128" width="148" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" red="0.31335492349999999" green="0.60599879729999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Basis">
+                                <state key="normal" title="Basics">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

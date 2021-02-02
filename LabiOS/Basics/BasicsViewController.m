@@ -19,6 +19,7 @@
     
     [self StringsSection];
     [self intSection];
+    [self doubleSection];
     
     
 }
@@ -28,6 +29,7 @@
     word1 = @"change de value";
     
     NSString * const word2 = @"Goodbye";
+    self.label.text = word2;
     //word2 = @"change de value"; no se puede porque es constante
     // esa sintaxis solo aplica cuando es String
     
@@ -55,6 +57,17 @@
     
     int score = numberA * numberB;
     self.label.text = [NSString stringWithFormat:@"%d", score];
+}
+
+-(void)doubleSection {
+    double numberA = 100.343;
+    double numberB = 213.324;
+    
+    double score = numberA + numberB;
+    
+    //.2 indica el numero de decimales que quiero. En este caso 2
+    self.label.text = [NSString stringWithFormat:@"%.2f", score];
+    
 }
 
 
