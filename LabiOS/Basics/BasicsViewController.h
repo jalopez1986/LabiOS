@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BasicsViewController : UIViewController
 {
     NSString *name;
+    int numberA;
+    int numberB;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *label;

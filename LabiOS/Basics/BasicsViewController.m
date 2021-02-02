@@ -18,6 +18,7 @@
     [super viewDidLoad];
     
     [self StringsSection];
+    [self intSection];
     
     
 }
@@ -37,8 +38,6 @@
     const int intConstante = 50;
     //intConstante = 60; no se puede es constante
     
-    
-    
 }
 
 
@@ -48,6 +47,14 @@
     
     self.label.text = name;
     self.label.text = [NSString stringWithFormat:@"%@ %@", word,name];
+}
+
+-(void)intSection {
+    numberA = 10;
+    numberB = 200;
+    
+    int score = numberA * numberB;
+    self.label.text = [NSString stringWithFormat:@"%d", score];
 }
 
 
