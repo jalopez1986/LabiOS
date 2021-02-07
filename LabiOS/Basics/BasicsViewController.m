@@ -21,6 +21,7 @@
     [self intSection];
     [self doubleSection];
     [self booleanSection];
+    [self arraySection];
 }
 
 -(void)consAndVariablesSection {
@@ -78,6 +79,30 @@
     
     //En objective C se recomienda usar YES NO
     //en c es true/false
+    
+}
+
+-(void)arraySection {
+    NSArray *array = @[@"Apple", @"Banana", @"Orange"];
+    NSLog(@"Array section: %@",array[2]);  //orange
+    
+    NSMutableArray * arrayMutable = [[NSMutableArray alloc] initWithObjects:@"Apple", @"Banana", @"Orange", nil];
+    
+    NSLog(@"Array section: %@",arrayMutable[2]);  //orange
+    
+    [arrayMutable addObject:@"Melon"];  //add to the end
+    NSLog(@"Array section: %@",arrayMutable[3]);  //Melon
+    
+    [arrayMutable insertObject:@"Strawberry" atIndex:3];
+    NSLog(@"Array section: %@",arrayMutable[3]);  //Strawberry
+    
+    [arrayMutable removeObjectAtIndex:3];
+    NSLog(@"Array section: %@",arrayMutable[3]);  //Melon
+    
+    NSLog(@"Array section count: %lu",arrayMutable.count);  //Melon
+    
+    
+    
     
 }
 
