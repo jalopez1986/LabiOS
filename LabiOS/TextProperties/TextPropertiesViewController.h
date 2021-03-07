@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (IBAction)center:(id)sender;
 - (IBAction)left:(id)sender;
 - (IBAction)right:(id)sender;
+- (IBAction)setCustomFont:(id)sender;
 
 
 @end

@@ -19,6 +19,7 @@
 		A56A089323626FB900EE9D99 /* ShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A56A089223626FB900EE9D99 /* ShadowViewController.m */; };
 		A56A0897236270E000EE9D99 /* Panel.m in Sources */ = {isa = PBXBuildFile; fileRef = A56A0896236270E000EE9D99 /* Panel.m */; };
 		A5EE29FD25F4837C0007B94A /* TextPropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE29FC25F4837C0007B94A /* TextPropertiesViewController.m */; };
+		A5EE2A0525F4916D0007B94A /* Pumpkin Story.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5EE2A0425F4916D0007B94A /* Pumpkin Story.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		A56A0896236270E000EE9D99 /* Panel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Panel.m; sourceTree = "<group>"; };
 		A5EE29FB25F4837C0007B94A /* TextPropertiesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextPropertiesViewController.h; sourceTree = "<group>"; };
 		A5EE29FC25F4837C0007B94A /* TextPropertiesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextPropertiesViewController.m; sourceTree = "<group>"; };
+		A5EE2A0425F4916D0007B94A /* Pumpkin Story.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pumpkin Story.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 		A5EE29FA25F4834E0007B94A /* TextProperties */ = {
 			isa = PBXGroup;
 			children = (
+				A5EE2A0425F4916D0007B94A /* Pumpkin Story.ttf */,
 				A5EE29FB25F4837C0007B94A /* TextPropertiesViewController.h */,
 				A5EE29FC25F4837C0007B94A /* TextPropertiesViewController.m */,
 			);
@@ -289,6 +292,7 @@
 			files = (
 				A56A086523626C5100EE9D99 /* LaunchScreen.storyboard in Resources */,
 				A56A086223626C5100EE9D99 /* Assets.xcassets in Resources */,
+				A5EE2A0525F4916D0007B94A /* Pumpkin Story.ttf in Resources */,
 				A56A086023626C5000EE9D99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

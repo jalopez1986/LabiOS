@@ -29,6 +29,11 @@
 }
 */
 
+//para referenciar la fuente hay que agregar en el info.plist la seccion de fonts provided by the aplication y agregar el nombre de la fuente despues de haber agregado el .tff al proyecto.
+- (IBAction)setCustomFont:(id)sender {
+    [self.label setFont:[UIFont fontWithName:@"Pumpkin Story" size:30]];
+}
+
 - (IBAction)right:(id)sender {
     self.label.textAlignment = NSTextAlignmentRight;
 }
