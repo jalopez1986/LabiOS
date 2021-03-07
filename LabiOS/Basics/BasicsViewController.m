@@ -117,15 +117,17 @@
     self.timeLabel.text = [timeFormat stringFromDate:[NSDate date]];
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)randomNumbers {
+    
+    
 }
-*/
 
+- (IBAction)generateRandomNumbers:(id)sender {
+    int randomNum0To100 = arc4random() % 100;
+    NSLog(@"Random Number 0To100; %i", randomNum0To100);
+    
+    int randomNum10To20 = arc4random_uniform(20-10) + 10;
+    NSLog(@"Random Number 10To20; %i", randomNum10To20);
+    
+}
 @end
