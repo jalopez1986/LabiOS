@@ -105,6 +105,13 @@
                                 <rect key="frame" x="183" y="323" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOU-xQ-oX8">
+                                <rect key="frame" x="120" y="401" width="208" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="elP-3L-tQb"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -114,6 +121,7 @@
                         <outlet property="label" destination="WBE-kz-LjU" id="fQI-pe-aW6"/>
                         <outlet property="myButton" destination="UF3-To-73C" id="mvV-o1-xOK"/>
                         <outlet property="mySwitch" destination="ctw-40-XBa" id="jxr-rL-IZl"/>
+                        <outlet property="timeLabel" destination="sOU-xQ-oX8" id="8f2-3N-kQp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QaF-h1-hEd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

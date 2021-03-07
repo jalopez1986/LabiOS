@@ -22,6 +22,8 @@
     [self doubleSection];
     [self booleanSection];
     [self arraySection];
+    [self NSTimerTest];
+    
 }
 
 -(void)consAndVariablesSection {
@@ -101,9 +103,18 @@
     
     NSLog(@"Array section count: %lu",arrayMutable.count);  //Melon
     
-    
-    
-    
+}
+
+-(void)NSTimerTest {
+    [self updateTimer];
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateTimer) userInfo:nil repeats:YES];
+}
+
+
+- (void)updateTimer {
+    NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
+    [timeFormat setDateFormat:@"hh:mm:ss"];
+    self.timeLabel.text = [timeFormat stringFromDate:[NSDate date]];
 }
 
 

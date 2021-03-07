@@ -15,11 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
     NSString *name;
     int numberA;
     int numberB;
+    NSTimer *timer;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIButton *myButton;
 @property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
 @end
 
